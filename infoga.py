@@ -70,7 +70,7 @@ class infoga(object):
 			if o in ('-v','--verbose'):self.verbose=checkVerbose(a)
 			if o in ('-s','--source'):self.source=checkSource(a)
 			if o in ('-b','--breach'):self.breach=True
-			if o in ('-r','--report'):self.report= open(a,'wb') if a != '' else None
+			if o in ('-r','--report'):self.report= open(a,'w') if a != '' else None
 			if o in ('-i','--info'):
 				self.listEmail.append(checkEmail(a))
 				plus('Searching for: %s'%a)
