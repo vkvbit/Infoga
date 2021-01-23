@@ -52,3 +52,9 @@ For using
 docker run -it --rm "infoga:1" --domain target --source all --breach -v 2
 ```
 > target is the site
+
+### Adding persistent volume
+For example
+```sh
+docker run -it --rm "infoga:1" -v /tmp/infoga-report:/tmp --domain target --source all --breach -v 2 --report /tmp/report.txt
+```
