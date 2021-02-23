@@ -16,7 +16,7 @@ class Google(Request):
 
 	def search(self):
 		test('Searching "%s" in Google...'%(self.target))
-		base_url = 'https://www.google.com/search?q=%22%40{target}%22&num=50'.format(
+		base_url = 'https://www.google.com/search?q=intext:%22%40{target}%22&num=50'.format(
 			target=self.target)
 		mails = []
 		# First 350 results (page 0 to 6)
