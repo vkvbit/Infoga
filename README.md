@@ -19,9 +19,10 @@ but you can still use the tool
 ```
 $ git clone https://github.com/m4ll0k/Infoga.git
 $ cd Infoga
-$ wget https://bootstrap.pypa.io/pip/2.7/get-pip.py`
+$ wget https://bootstrap.pypa.io/pip/2.7/get-pip.py
+$ python get-pip.py
 $ pip2 install -r requirements.txt
-$ sudo python setup.py install
+$ python setup.py install
 
 ```
 
