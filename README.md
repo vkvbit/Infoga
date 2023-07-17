@@ -26,6 +26,16 @@ $ python setup.py install
 
 ```
 
+## Python 3 Support
+
+```
+$ git clone https://github.com/m4ll0k/Infoga.git
+$ cd Infoga
+$ python3 setup.py build
+$ pip install .
+$ python3 infoga.py
+```
+
 ### This script is Tested in Kali linx , Parrot os , Ubuntu os 
 
 ## Usage

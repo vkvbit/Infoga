@@ -5,7 +5,7 @@
 # @url    : http://github.com/m4ll0k
 # @author : Momo Outaadi (m4ll0k)
 
-from setuptools import setup 
+from setuptools import setup, find_packages
 
 setup(
     name='infoga',
@@ -19,5 +19,6 @@ setup(
     license='GPLv3',
 
     install_requires = ['colorama','requests','urllib3'],
-    console =['infoga.py'],
+    package_dir={'': 'src'},
+    packages=find_packages(where='src'),
 )
